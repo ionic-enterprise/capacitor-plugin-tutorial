@@ -1,0 +1,7 @@
+{
+  "name": "Capacitor Plugin Tutorial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
