@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.cap.plugin",
+  "appName": "Capacitor Plugin Tutorial",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}
