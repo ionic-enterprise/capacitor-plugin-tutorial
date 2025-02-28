@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Capacitor Plugin Tutorial</string>
+    <string name="title_activity_main">Capacitor Plugin Tutorial</string>
+    <string name="package_name">io.ionic.cap.plugin</string>
+    <string name="custom_url_scheme">io.ionic.cap.plugin</string>
+</resources>
