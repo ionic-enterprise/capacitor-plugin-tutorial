@@ -15,6 +15,9 @@
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
 		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
+		BE35F6E42D77738600516DFC /* ScreenOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35F6E32D77737F00516DFC /* ScreenOrientation.swift */; };
+		BE35F6E62D77739300516DFC /* ScreenOrientationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35F6E52D77738C00516DFC /* ScreenOrientationPlugin.swift */; };
+		BE35F6E82D77769A00516DFC /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35F6E72D77769A00516DFC /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		BE35F6E32D77737F00516DFC /* ScreenOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOrientation.swift; sourceTree = "<group>"; };
+		BE35F6E52D77738C00516DFC /* ScreenOrientationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOrientationPlugin.swift; sourceTree = "<group>"; };
+		BE35F6E72D77769A00516DFC /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +79,7 @@
 		504EC3061FED79650016851F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				BE35F6E12D77736700516DFC /* plugins */,
 				50379B222058CBB4000EE86E /* capacitor.config.json */,
 				504EC3071FED79650016851F /* AppDelegate.swift */,
 				504EC30B1FED79650016851F /* Main.storyboard */,
@@ -81,6 +88,7 @@
 				504EC3131FED79650016851F /* Info.plist */,
 				2FAD9762203C412B000D30F8 /* config.xml */,
 				50B271D01FEDC1A000F3C39B /* public */,
+				BE35F6E72D77769A00516DFC /* MyViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -92,6 +100,23 @@
 				AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE35F6E12D77736700516DFC /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BE35F6E22D77737000516DFC /* ScreenOrientation */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		BE35F6E22D77737000516DFC /* ScreenOrientation */ = {
+			isa = PBXGroup;
+			children = (
+				BE35F6E52D77738C00516DFC /* ScreenOrientationPlugin.swift */,
+				BE35F6E32D77737F00516DFC /* ScreenOrientation.swift */,
+			);
+			path = ScreenOrientation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE35F6E42D77738600516DFC /* ScreenOrientation.swift in Sources */,
+				BE35F6E62D77739300516DFC /* ScreenOrientationPlugin.swift in Sources */,
+				BE35F6E82D77769A00516DFC /* MyViewController.swift in Sources */,
 				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
